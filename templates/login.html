@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h2>Join LEGEND BOYS</h2>
+<form method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="url" name="photo" placeholder="Photo URL" required><br>
+    <textarea name="bio" placeholder="Short Bio" required></textarea><br>
+    <input type="number" name="age" placeholder="Your Age" required><br>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

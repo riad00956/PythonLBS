@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h2>Our Members</h2>
+<ul>
+    {% for member in members %}
+    <li>
+        <img src="{{ member.photo }}" alt="{{ member.name }}" width="100">
+        <h3>{{ member.name }}</h3>
+        <p>{{ member.bio }}</p>
+        <small>Age: {{ member.age }}</small>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
